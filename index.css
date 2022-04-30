@@ -1,0 +1,361 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin          : 0;
+    text-align      : center;
+    font-family     : 'arial', sans-serif;
+    background-color: beige;
+    overflow        : hidden;
+}
+
+#allPage {
+    width              : 100%;
+    scroll-behavior    : smooth;
+    scrollbar-color    : brown bisque;
+    margin             : 0;
+    display            : flex;
+    flex-direction     : column;
+    height             : 100vh;
+    overflow-y         : scroll;
+    overflow-x         : hidden;
+    background-color   : beige;
+    background-image   : url("moenyback.png");
+    background-size    : 100px 200px;
+    background-repeat  : repeat;
+    background-position: center;
+    row-gap            : 30px;
+
+}
+
+#allPage ::-webkit-scrollbar-track {
+    background-color: brown;
+}
+
+#allPage ::-webkit-scrollbar-thumb {
+    background-color: bisque;
+
+}
+
+header .navbar {
+    background-color: brown;
+    color           : beige;
+    font-size       : 20px;
+    padding         : 10px;
+    text-align      : center;
+    width           : 100%;
+    height          : 50px;
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    z-index         : 2;
+    display         : flex;
+    justify-content : space-around;
+    margin-left     : 10px;
+    margin-right    : auto;
+}
+
+header {
+    margin             : 0px;
+    background-color   : bisque;
+    max-width          : 100%;
+    display            : flex;
+    color              : #fff;
+    background-position: center;
+    background-size    : cover;
+    min-height         : 500px;
+    flex-direction     : column;
+    text-align         : center;
+    flex-wrap          : nowrap;
+}
+
+.big_header {
+    height             : 85%;
+    width              : 100%;
+    display            : flex;
+    align-items        : center;
+    justify-content    : center;
+    background-color   : blanchedalmond;
+    overflow           : visible;
+    margin             : 10px;
+    background-image   : url("images/headerpic.jpg");
+    background-repeat  : no-repeat;
+    background-position: center;
+}
+
+
+header h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size  : 50px;
+    color      : brown;
+    text-align : center;
+    flex-shrink: 1;
+    flex-grow  : 0;
+    font-weight: bolder;
+}
+
+.infoHeader {
+    margin          : -50px auto 60px auto;
+    z-index         : 1;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    width           : 300px;
+    color           : #000;
+    padding         : 5px;
+    max-width       : 300px;
+    min-height      : 150px;
+    background-color: bisque;
+}
+
+.infoHeader h4 {
+    margin: 10px 0 10px 0;
+}
+
+.infoHeader p {
+    margin: 0;
+}
+
+.propic {
+    width           : 50px;
+    border-radius   : 100px;
+    border          : bisque;
+    background-color: #9d2424;
+}
+
+.navbar .navbutton {
+    color        : brown;
+    font-size    : 20px;
+    padding      : 10px;
+    text-align   : center;
+    width        : 100px;
+    height       : 50px;
+    border       : 1px solid brown;
+    border-radius: 10px;
+    cursor       : pointer;
+}
+
+
+
+a {
+    color          : #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a img {
+    width: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+
+
+.article {
+    display         : flex;
+    flex-direction  : row;
+    flex-wrap       : wrap;
+    row-gap         : 120px;
+    max-width       : 90vw;
+    margin          : auto;
+    background-color: blanchedalmond;
+
+}
+
+.article section:last-child {
+    margin-bottom: 60px;
+}
+
+
+section {
+    display         : flex;
+    padding         : 20px;
+    flex-basis      : 100%;
+    flex-shrink     : 1;
+    flex-grow       : 0;
+    box-shadow      : bisque 10px 5px 20px, bisque 10px 5px 20px, bisque 10px 5px 20px;
+    height          : 500px;
+    justify-content : flex-start;
+    background-color: beige;
+    flex-direction  : column;
+    flex-wrap       : wrap;
+    text-align      : center;
+}
+
+section .number {
+    border: 2px solid brown;
+
+    font-size       : 30px;
+    margin-left     : -50px;
+    width           : 30px;
+    margin-right    : 30px;
+    height          : fit-content;
+    margin-top      : -20px;
+    color           : brown;
+    background-color: beige;
+    border-right    : none;
+}
+
+section .number h1 {
+    font-size: 30px;
+    color    : brown;
+}
+
+section .details {
+    width      : 40%;
+    margin-left: 20px;
+    text-align : left;
+    height     : 100%;
+    margin-top : 10px;
+}
+
+.details h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size  : 30px;
+    margin     : 0;
+    color      : brown;
+}
+
+section .img {
+
+    width       : 40%;
+    height      : 400px;
+    margin      : 30px;
+    margin-left : auto;
+    margin-right: auto;
+
+}
+
+.details h3 {
+    font-size: 20px;
+    margin   : 0 0 20px 0;
+    color    : #01080c;
+}
+
+.details p {
+    margin       : 0 0 20px 0;
+    max-height   : 400px;
+    overflow-y   : auto;
+    overflow-x   : hidden;
+    padding-right: 5px;
+}
+
+
+
+footer {
+    background-color: black;
+    display         : flex;
+    align-items     : center;
+    color           : rgb(0, 0, 0);
+    padding         : 20px;
+    background-color: blanchedalmond;
+}
+
+footer a {
+    color     : #fff;
+    margin    : 0 20px;
+    background: none;
+}
+
+.copyright {
+    margin-left: auto;
+}
+
+.originalImage {
+    color        : brown;
+    text-align   : center;
+    border       : 1px solid brown;
+    border-radius: 10px;
+    cursor       : pointer;
+    padding      : 5px;
+    width        : 400px;
+    margin-left  : auto;
+    margin-right : auto;
+}
+
+.summButton {
+
+    color        : brown;
+    padding      : 10px;
+    text-align   : center;
+    width        : 100px;
+    height       : 50px;
+    border       : 1px solid brown;
+    border-radius: 10px;
+    cursor       : pointer;
+
+}
+
+.summButtons {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-around;
+    margin-top     : -60px;
+}
+
+.originalButton {
+    color        : brown;
+    padding      : 10px;
+    text-align   : center;
+    width        : 100px;
+    height       : 50px;
+    border       : 1px solid brown;
+    border-radius: 10px;
+    cursor       : pointer;
+
+}
+
+
+@media (max-width: 500px) {
+    .article {
+        flex-direction: column;
+        flex-wrap     : nowrap;
+    }
+
+    .article section:last-child {
+        margin-bottom: 0;
+    }
+
+    .article section {
+        display       : flex;
+        flex-direction: column;
+        flex-wrap     : nowrap;
+        margin        : 0;
+    }
+
+    .article section .details {
+        width : 100%;
+        margin: 0;
+    }
+
+    .article section .img {
+        width : 100%;
+        height: 200px;
+        margin: 0;
+    }
+
+    section .number {
+        margin-left  : -20px;
+        margin-bottom: 20px;
+    }
+
+    .originalImage {
+        width     : 240px;
+        margin-top: 10px;
+    }
+
+    .summButtons {
+        display        : flex;
+        flex-direction : row;
+        height         : 100px;
+        justify-content: space-evenly;
+        margin-top     : -90px;
+        margin-bottom  : 50px;
+    }
+}
